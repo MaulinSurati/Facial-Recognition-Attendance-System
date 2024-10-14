@@ -8,15 +8,15 @@ from datetime import date
 import xlwt
 from datetime import datetime
 
-# Get a reference to webcam #0 (the default one)
+#reference to webcam (default one)
 video_capture = cv2.VideoCapture(0)
 
-# Load a sample picture and learn how to recognize it.
-image = 'C:/Dell_backup/D/NIRMA/SEM_3/DMV/INNOVATIVE/final/Smart_Attendence_System/bhavya.jpeg'
-image2 = 'C:/Dell_backup/D/NIRMA/SEM_3/DMV/INNOVATIVE/final/Smart_Attendence_System/sahil.jpeg'
-image3 = 'C:/Dell_backup/D/NIRMA/SEM_3/DMV/INNOVATIVE/final/Smart_Attendence_System/maulin.jpg'
-image4 = 'C:/Dell_backup/D/NIRMA/SEM_3/DMV/INNOVATIVE/final/Smart_Attendence_System/aastha.jpeg'
-image5 = 'C:/Dell_backup/D/NIRMA/SEM_3/DMV/INNOVATIVE/final/Smart_Attendence_System/tanay.jpeg'
+# Loading of images and learning how to recognize it.
+image = 'C:/Dell_backup/D/NIRMA/SEM_3/DMV/INNOVATIVE/final/Smart_Attendence_System/1.jpeg'
+image2 = 'C:/Dell_backup/D/NIRMA/SEM_3/DMV/INNOVATIVE/final/Smart_Attendence_System/2.jpeg'
+image3 = 'C:/Dell_backup/D/NIRMA/SEM_3/DMV/INNOVATIVE/final/Smart_Attendence_System/3.jpg'
+image4 = 'C:/Dell_backup/D/NIRMA/SEM_3/DMV/INNOVATIVE/final/Smart_Attendence_System/4.jpeg'
+image5 = 'C:/Dell_backup/D/NIRMA/SEM_3/DMV/INNOVATIVE/final/Smart_Attendence_System/5.jpeg'
 
 person1_name = "018_bhavya"
 person1_image = face_recognition.load_image_file(image)
@@ -54,7 +54,6 @@ known_face_names = [
 ]
 
 
-# Initialize some variables
 face_locations = []
 face_encodings = []
 face_names = []
@@ -146,7 +145,7 @@ try:
         # Display the resulting image
         cv2.imshow('Video', frame)
 
-        # Hit 'q' on the keyboard to quit!
+        # 'q' on the keyboard to quit!
         if cv2.waitKey(1) & 0xFF == ord('q'):
             print("Data saved")
             break
