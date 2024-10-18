@@ -8,7 +8,7 @@ The existing manual methods often lead to challenges such as:
 
 In response to the identified challenges, I proposed the implementation of an innovative Automated Facial Recognition Attendance System. This system leverages cutting-edge technologies to revolutionize traditional attendance tracking methods.
 
-Key Features:
+Key Features include:
 FACIAL RECOGNITION TECHGNOLOGY:
 -->Uses deep learning for accurate and secure identification.
 -->Maps unique facial features for enhanced precision.
